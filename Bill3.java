@@ -8,6 +8,8 @@ public class Bill3 {
 		int bill = Integer.parseInt(args[3]);
 
 
-		System.out.println("Dear "+name1+", "+name2+" and "+name3+": pay "+(double)bill/3+" Shekels each");
+		
+
+		System.out.println("Dear "+name1+", "+name2+" and "+name3+": pay "+String.format("%.2f",(double)bill/3)+" Shekels each");
 	}
 }

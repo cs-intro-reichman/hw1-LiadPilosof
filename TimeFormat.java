@@ -9,24 +9,34 @@ public class TimeFormat {
 
 		
 
+
 		if (hours>12) {
+			//the case where the time is past 13
 			hours=hours-12;
 			if (minutes<10) 
 				System.out.println(hours+":0"+minutes+" PM");
 			else
 				System.out.println(hours+":"+minutes+" PM");
 		}
+			//the case where the time is before 11
 		else if (hours<12) {
-			if (minutes<10) 
+			if (minutes<10) {
 				System.out.println(hours+":0"+minutes+" AM");
-			else
+			}
+			else{
 				System.out.println(hours+":"+minutes+" AM");
+			}
 		}
 		else {
-			if (minutes<10) 
+				//the case where its exactly  12
+			if (minutes<10) {
 				System.out.println(hours+":0"+minutes+" PM");
-		else
+			}
+
+		else{
 			System.out.println(hours+":"+minutes+" PM");
+		}
+
 		}
 		
 
